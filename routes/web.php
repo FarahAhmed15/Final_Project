@@ -32,7 +32,7 @@ Route::controller(ProductController::class)->group(function(){
 });
 
 Route::controller( UserProductController::class)->group(function () {
-    Route::get('products','index')->name('user.all.products');
+    Route::get('allproducts','index')->name('user.all.products');
     Route::get('products/show/{id}','show')->name('user.show.product');
     Route::post('addtowishlist/{id}','addtowishlist')->name('user.addtowishlist');
     Route::get('mywishlist','mywishlist')->name('user.wishlist');
